@@ -5,6 +5,7 @@
 
   <groupId>dev.sandeep.springcloud</groupId>
   <artifactId>product-service</artifactId>
+
   <version>0.0.1-SNAPSHOT</version>
   <name>product-service</name>
   <description>Spring Cloud demo - product service</description>
@@ -57,6 +58,13 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>repackage</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>

@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  product-service:
+    build: . #path to build from || . means current directly
+    container_name: product-service-demo
+    ports:
+      - "8081:8081"
